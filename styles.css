@@ -50,7 +50,7 @@ body {
 }
 
 .contentCenter {
-    text-align: center; /* Center content horizontally */
+    text-align: center;
 }
 
 .welcomeText {
@@ -58,19 +58,19 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 22px;
-    margin: 5px auto; /* Center horizontally by setting auto margin for left and right */
+    margin: 5px auto;
     color: #bcc3b1;
-    display: block; /* Change to block to occupy full width */
+    display: block;
     position: relative;
-    text-align: center; /* Center text within its container */
+    text-align: center;
 }
 
 .welcomeText::after {
     content: '|';
-    position: relative; /* Use relative positioning */
-    right: 15px; /* Adjust to position the cursor */
-    animation: blink 1s infinite; /* Apply the blinking animation */
-    color: inherit; /* Ensure the cursor matches the text color */
+    position: relative;
+    right: 15px;
+    animation: blink 1s infinite;
+    color: inherit
 }
 
 @keyframes blink {
@@ -138,17 +138,17 @@ body {
     background-color: #101010;
     border-radius: 10px;
     height: 5px;
-    width: 100%; /* Adjust as needed */
-    margin: 0 auto; /* Center horizontally */
+    width: 100%;
+    margin: 0 auto;
 }
   
 .progress-bar {
-    background-color: #00C2FF;; /* Green */
+    background-color: #00C2FF;
     height: 100%;
     border-radius: 10px;
     text-align: center;
-    line-height: 20px; /* Center vertically */
-    transition: width 0.5s ease; /* Add smooth transition */
+    line-height: 20px;
+    transition: width 0.5s ease;
 }
   
 .inside {
@@ -159,4 +159,10 @@ body {
 .link {
     text-decoration: none;
     color: white;
+}
+
+.class.completed {
+    border-color: #00C2FF;
+    border-style: solid;
+    border-width: 1px;
 }
