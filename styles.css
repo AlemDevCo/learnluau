@@ -1,0 +1,121 @@
+body {
+    background-image: url(https://i.ibb.co/z42yyFf/Group-3-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.logo {
+    color: white;
+    text-align: center;
+
+    font-size: 25px;
+
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+
+.logoBlue {
+    color: #00C2FF;
+}
+
+.logoRed {
+    color: #FF4747;
+    font-size: 15px;
+}
+
+/* Code Colors */
+
+.codeBlue {
+    color: #84d6ea;
+}
+
+.codeBlue2 {
+    color: #61a0ef;
+}
+
+.codeWhite {
+    color: #bcc3b1;
+}
+
+.codeGreen {
+    color: #a5dd73;
+}
+
+.codeRed {
+    color: #f76e7b;
+}
+
+.codeYellow {
+    color: #fdfb83;
+}
+
+.welcomeText {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.madeWithLove {
+    text-align: center;
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;    
+    margin-bottom: 150px;  
+}
+
+.sectionTitle {
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;  
+    
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.classes {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class {
+    background-color: #101010;
+    height: 60px;
+    width: 25%;
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: grid;
+	align-items: center;
+}
+
+.sections {
+    background-color: #050505;
+    padding-top: 50px;
+}
+
+.className {
+    color: white;
+    margin-left: 20px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
