@@ -8,6 +8,10 @@ body {
     padding: 0; /* Remove default padding */
 }
 
+:root {
+    color-scheme: dark;
+}
+
 .topBar {
     padding: 20px;
 }
