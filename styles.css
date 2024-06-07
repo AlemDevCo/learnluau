@@ -113,6 +113,10 @@ body {
     align-items: center;
 }
 
+.class:hover {
+    background-color: #141414;
+}
+
 .sections {
     background-color: #050505;
     padding-top: 50px;
