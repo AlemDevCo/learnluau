@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="topBar">
-        <p class="logo"><a class="link" href="https://learnluau.com">LEARN<span class="logoBlue">LUAU</span><span class="logoRed">V4</span></a></p>
+        <p class="logo"><a class="link" href="https://alemdevco.github.io/learnluau/">LEARN<span class="logoBlue">LUAU</span><span class="logoRed">V4</span></a></p>
     </div>
     <p class="section">1. Introduction to Roblox Development</p>
     <p class="title">What is Roblox Studio?</p>
@@ -29,9 +29,44 @@
                 Unlike most of the other popular game engines out there, Roblox provides servers for your games without any fees, which means you can create a <a class="url" href="https://create.roblox.com/docs/projects/client-server" target=”_blank”><span class="codeBlue">multiplayer</span></a> game without needing to pay to run it.
             </p>
             <div class="buttons">
-
+                <div class="button">
+                    <p class="buttonText" onclick="location.href='what-is-roblox-lua.html';" style="cursor: pointer;">Continue</p>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        console.log("Welcome to the class page!");
+
+        // Function to update progress and set class as completed in localStorage
+        function markClassCompleted(className) {
+            // Get current clicked classes
+            let clickedClasses = JSON.parse(localStorage.getItem("clickedClasses"));
+
+            // Check if className is not already in the clickedClasses array
+            if (!clickedClasses.includes(className)) {
+                // Increment percent value by 1
+                let percent = parseInt(localStorage.getItem("percent")) + 1;
+
+                // Add className to clickedClasses array
+                clickedClasses.push(className);
+
+                // Save the new percent value and clickedClasses to localStorage
+                localStorage.setItem("percent", percent);
+                localStorage.setItem("clickedClasses", JSON.stringify(clickedClasses));
+
+                // Add completed class to the corresponding class button in the main page
+                if (percent <= 100) {
+                    document.getElementById(className).classList.add('completed');
+                    document.getElementById('progress-bar').style.width = percent + '%';
+                }
+            }
+        }
+
+        // Call the function to mark the class as completed when the page loads
+        markClassCompleted('class2'); // Change 'class1' to match the ID of the class button
+    </script>
+</body>
+</html>
 </body>
 </html>
