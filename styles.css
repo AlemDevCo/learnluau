@@ -31,7 +31,7 @@ body {
 }
 
 .logoRed {
-    color: #FF4747;
+    color: hsl(0, 100%, 64%);
     font-size: 15px;
 }
 
@@ -154,4 +154,9 @@ body {
 .inside {
     width: 80%;
     margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
 }
