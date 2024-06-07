@@ -8,18 +8,18 @@ body {
     padding: 0; /* Remove default padding */
 }
 
+.topBar {
+    padding: 20px;
+}
+
 .logo {
     color: white;
     text-align: center;
-
     font-size: 25px;
-
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
-    margin-top: 50px;
-    margin-bottom: 125px;
+    margin-bottom: 50px;
 }
 
 .logoBlue {
@@ -37,10 +37,6 @@ body {
     color: #84d6ea;
 }
 
-.codeBlue2 {
-    color: #61a0ef;
-}
-
 .codeWhite {
     color: #bcc3b1;
 }
@@ -49,50 +45,62 @@ body {
     color: #a5dd73;
 }
 
-.codeRed {
-    color: #f76e7b;
-}
-
-.codeYellow {
-    color: #fdfb83;
+.contentCenter {
+    text-align: center; /* Center content horizontally */
 }
 
 .welcomeText {
     font-family: "Fira Mono", monospace;
     font-weight: 500;
     font-style: normal;
-
-    text-align: center;
     font-size: 22px;
-    margin: 5px;
+    margin: 5px auto; /* Center horizontally by setting auto margin for left and right */
+    color: #bcc3b1;
+    display: block; /* Change to block to occupy full width */
+    position: relative;
+    text-align: center; /* Center text within its container */
+}
+
+.welcomeText::after {
+    content: '|';
+    position: relative; /* Use relative positioning */
+    right: 15px; /* Adjust to position the cursor */
+    animation: blink 1s infinite; /* Apply the blinking animation */
+    color: inherit; /* Ensure the cursor matches the text color */
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
 }
 
 .madeWithLove {
     text-align: center;
     color: white;
-
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;    
-    margin-bottom: 150px;  
+    margin-bottom: 100px;  
 }
 
 .sectionTitle {
     color: white;
-
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;  
-    
-    margin-left: 100px;
-    margin-right: auto;
 }
 
 .classes {
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     justify-content: space-between;
+}
+
+.class:not(:last-child) {
+    margin-right: 10px;
 }
 
 .class {
@@ -100,10 +108,9 @@ body {
     height: 60px;
     width: 25%;
     flex-grow: 1;
-    margin-right: 10px;
     border-radius: 10px;
     display: grid;
-	align-items: center;
+    align-items: center;
 }
 
 .sections {
@@ -114,8 +121,29 @@ body {
 .className {
     color: white;
     margin-left: 20px;
-
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.progress {
+    background-color: #101010;
+    border-radius: 10px;
+    height: 5px;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+}
+  
+.progress-bar {
+    background-color: #00C2FF;; /* Green */
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px; /* Center vertically */
+    transition: width 0.5s ease; /* Add smooth transition */
+}
+  
+.inside {
+    width: 80%;
+    margin: auto;
 }
