@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="topBar">
-        <p class="logo"><a class="link" href="https://learnluau.com">LEARN<span class="logoBlue">LUAU</span><span class="logoRed">V4</span></a></p>
+        <p class="logo"><a class="link" href="https://alemdevco.github.io/learnluau/">LEARN<span class="logoBlue">LUAU</span><span class="logoRed">V4</span></a></p>
     </div>
     <p class="welcomeText"><span class="codeBlue">print</span><span class="codeWhite">(</span><span class="codeGreen">"Welcome to Learn Luau!"</span><span class="codeWhite">) </span></p>
     <p class="madeWithLove">The #1 Roblox Lua learning website</p>
@@ -26,35 +26,35 @@
     <div class="sections">
         <div class="inside">
             <div class="progress">
-                <div class="progress-bar" style="width: 50%;"></div>
+                <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
             </div>
             <p class="sectionTitle">1. Introduction to Roblox Development</p>
                 <div class="classes">
-                    <div class="class" onclick="location.href='courses/what-is-roblox-studio.html';" style="cursor: pointer;">
+                    <div class="class" id="class1" onclick="updateProgressAndRedirect('courses/what-is-roblox-studio.html', 'class1');" style="cursor: pointer;">
                         <p class="className">What is Roblox Studio?</p>
                     </div>
-                    <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="class" id="class2" onclick="updateProgressAndRedirect('courses/what-is-roblox-lua.html', 'class2');" style="cursor: pointer;">
                         <p class="className">What is Roblox Lua?</p>
                     </div>
                 </div>
             <p class="sectionTitle">2. Using Roblox Studio</p>
             <div class="classes">
-                <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="class" id="class3" onclick="updateProgressAndRedirect('courses/creating-your-first-experience.html', 'class3');" style="cursor: pointer;">
                     <p class="className">Creating your first experience</p>
                 </div>
-                <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="class" id="class4" onclick="updateProgressAndRedirect('courses/first-look-around-roblox-studio.html', 'class4');" style="cursor: pointer;">
                     <p class="className">Your first look around Roblox Studio</p>
                 </div>
             </div>
             <p class="sectionTitle">3. Lua Basics</p>
             <div class="classes">
-                <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="class" id="class5" onclick="updateProgressAndRedirect('#', 'class5');" style="cursor: pointer;">
                     
                 </div>
-                <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="class" id="class6" onclick="updateProgressAndRedirect('#', 'class6');" style="cursor: pointer;">
                     
                 </div>
-                <div class="class" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="class" id="class7" onclick="updateProgressAndRedirect('#', 'class7');" style="cursor: pointer;">
                     
                 </div>
             </div>
@@ -67,8 +67,6 @@
             <p class="sectionTitle">10. Tips and Best Practices</p>
         </div>
     </div>
-    <script>
-        console.log("Welcome to Learn Luau!")
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
